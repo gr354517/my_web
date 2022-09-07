@@ -1,0 +1,78 @@
+*{
+    /* 這東西包含title很妙慎用 */
+}
+@keyframes link_move{
+    0%{background-color: rgb(255, 255, 255);
+        color: rgb(142, 186, 253);
+        left: 0px;
+        opacity:0}
+    20%{background-color: rgb(255, 255, 255);
+        color: rgb(107, 165, 253);
+        left: 40px;
+        opacity:1}
+    /* 100%{background-color: rgb(36, 131, 213);left: 50px;} */
+    100%{background-color: rgb(255, 255, 255);
+        color: rgb(107, 165, 253);;
+        left: 50px;
+        opacity:1}
+}
+body{
+    /* top: 100px;
+    left: 100px; */
+    background-size: 120%;
+    background-position: center;
+    font-size: 30px;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head_img{
+    /* border: 1px solid black; */
+    /* background-color: white; */
+    padding: 87px;
+    border-radius: 100%;
+}
+.social_media_box{
+    position: relative;
+    /* border: 1px solid black; */
+    padding: 10px;
+    /* background-color: blueviolet; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social_media{
+    color: rgb(142, 186, 253);
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    line-height: 2em;
+    max-width: 15em;
+    min-width: 10em;
+    height: 2em;
+    border-radius: 30px;
+    border: 5px solid white;
+    padding: 10px;
+    /* background-color: rgb(188, 215, 255); */
+}
+.social_media:visited{
+    color: rgb(142, 186, 253);
+}
+.social_media:hover{
+    animation: link_move;
+    animation-duration: 2.5s;
+    /* background-color: rgb(220, 111, 207); */
+}
+.social_media_logo{
+    position: absolute;
+    left: 15px;
+    height: 2em;
+}
+.copy_right{
+    font-size: 5px;
+    color: bisque;
+}
